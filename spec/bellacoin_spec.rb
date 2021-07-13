@@ -15,6 +15,12 @@ describe BellaCoin, "#hash" do
                 expect(described_class.hash(key)).to eq(value)
             end
         end
-        
-    end
+
+        hash_examples.each do |key, _value|
+            it "the string '#{key}' always produces a hash of 64 characters" do
+                expect(described_class.hash(key).length).to eq(64)
+            end
+        end
+
+    end    
 end
