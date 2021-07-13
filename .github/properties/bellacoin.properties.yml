@@ -1,0 +1,6 @@
+{
+    "name": "BellaCoin Github Actions",
+    "description": "Build and test Bellacoin project with RSpec.",
+    "iconName": "ruby",
+    "categories": ["Ruby"]
+}
